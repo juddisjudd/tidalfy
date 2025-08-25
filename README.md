@@ -72,7 +72,7 @@ NEXT_PUBLIC_BASE_URL=http://127.0.0.1:3000
    ```
 
 6. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://127.0.0.1:3000](http://127.0.0.1:3000)
 
 ## 🛠️ Tech Stack
 
