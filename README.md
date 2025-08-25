@@ -38,7 +38,7 @@ TIDAL_CLIENT_SECRET=your_tidal_client_secret
 NEXT_PUBLIC_TIDAL_CLIENT_ID=your_tidal_client_id
 
 # Base URL for OAuth callbacks
-NEXT_PUBLIC_BASE_URL=http://localhost:3000
+NEXT_PUBLIC_BASE_URL=http://127.0.0.1:3000
 ```
 
 ### Installation
