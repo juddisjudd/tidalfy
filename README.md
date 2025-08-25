@@ -57,13 +57,13 @@ NEXT_PUBLIC_BASE_URL=http://localhost:3000
 3. **Set up Spotify App**
    - Go to [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
    - Create a new app
-   - Add redirect URI: `http://localhost:3000/auth/spotify/callback`
+   - Add redirect URI: `http://127.0.0.1:3000/auth/spotify/callback`
    - Copy Client ID and Client Secret to `.env`
 
 4. **Set up Tidal App**
    - Go to [Tidal Developer Portal](https://developer.tidal.com/)
    - Create a new app
-   - Add redirect URI: `http://localhost:3000/auth/tidal/callback`
+   - Add redirect URI: `http://127.0.0.1:3000/auth/tidal/callback`
    - Copy Client ID and Client Secret to `.env`
 
 5. **Run the development server**
