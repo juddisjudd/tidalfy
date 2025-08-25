@@ -24,7 +24,7 @@ export function Footer() {
             <div className="w-px h-6 bg-gray-700"></div>
 
             <a
-              href="https://github.com/juddisjudd"
+              href="https://github.com/juddisjudd/tidalfy"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"

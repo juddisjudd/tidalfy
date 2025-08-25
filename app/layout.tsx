@@ -1,24 +1,15 @@
-import type React from "react";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type React from "react"
+import type { Metadata } from "next"
+import { Inter } from "next/font/google"
+import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Tidalfy - Rebuild Spotify Playlists on Tidal",
   description:
     "Seamlessly rebuild your Spotify playlists on Tidal. Find matching tracks and recreate your favorite playlists across music streaming platforms.",
-  keywords: [
-    "Spotify",
-    "Tidal",
-    "playlist",
-    "music",
-    "streaming",
-    "transfer",
-    "rebuild",
-    "convert",
-  ],
+  keywords: ["Spotify", "Tidal", "playlist", "music", "streaming", "transfer", "rebuild", "convert"],
   authors: [{ name: "Judd", url: "https://github.com/juddisjudd" }],
   creator: "Judd",
   icons: {
@@ -34,7 +25,7 @@ export const metadata: Metadata = {
     title: "Tidalfy - Rebuild Spotify Playlists on Tidal",
     description:
       "Seamlessly rebuild your Spotify playlists on Tidal. Find matching tracks and recreate your favorite playlists across music streaming platforms.",
-    url: "https://tidalfy.net/",
+    url: "https://tidalfy.vercel.app",
     siteName: "Tidalfy",
     type: "website",
     images: [
@@ -59,23 +50,26 @@ export const metadata: Metadata = {
   },
   viewport: "width=device-width, initial-scale=1",
   themeColor: "#000000",
-  generator: "v0.dev",
-};
+    generator: 'v0.app'
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" className="dark">
       <head>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <script
+          defer
+          src="https://umami.bawkbawk.net/script.js"
+          data-website-id="9d654dc9-f076-4cda-84f3-28e3acb82c46"
+        />
       </head>
-      <body className={`${inter.className} bg-black text-white antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.className} bg-black text-white antialiased`}>{children}</body>
     </html>
-  );
+  )
 }

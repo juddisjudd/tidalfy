@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
+export async function POST(request: NextRequest) {
   const authHeader = request.headers.get("authorization")
 
   if (!authHeader) {
@@ -8,10 +8,17 @@ export async function GET(request: NextRequest, { params }: { params: { id: stri
   }
 
   const token = authHeader.replace("Bearer ", "")
-  const playlistId = params.id
 
   try {
-    const response = await fetch(`https://api.spotify.com/v1/playlists/${playlistId}/tracks`, {
+    const { url } = await request.json()
+
+    if (!url) {
+      return NextResponse.json({ error: "URL is required" }, { status: 400 })
+    }
+
+    console.log("Fetching tracks from URL:", url)
+
+    const response = await fetch(url, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
