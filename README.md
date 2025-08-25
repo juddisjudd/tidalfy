@@ -4,6 +4,8 @@
 
 Tidalfy is a web application that helps you seamlessly transfer your favorite Spotify playlists to Tidal by finding matching tracks across both platforms.
 
+<img width="1920" height="961" alt="chrome_UGuAqylH3T" src="https://github.com/user-attachments/assets/9d9bc18b-cd06-4cb7-98b3-7d0cf4e766d9" />
+
 ## Features
 - 🔐 **Secure OAuth Authentication** - Connect safely to both Spotify and Tidal
 - 📊 **Real-time Progress Tracking** - Watch your playlist rebuild with detailed statistics
@@ -111,7 +113,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **GPL-3.0 license** - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
